@@ -42,6 +42,7 @@
  ```
  Bây giờ, *myMathFunction* chỉ có thể gán với giá trị là một function với 2 tham số có kiểu là number 
  * Objects 
+ 
  Cách khai báo một object trong typescript như sau:
  ```Javascript
  let person: {
