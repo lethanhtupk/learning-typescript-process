@@ -5,6 +5,6 @@
 
 * Cấu trúc khai báo data types là *:<type>*
 * Cách khai báo type cho tham số
-  ```
+  ```Javascript
   function sayHi(humanNam: string) {}
   ```
