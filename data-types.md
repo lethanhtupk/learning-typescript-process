@@ -49,4 +49,18 @@
   firstName: string, lastName: string, age: number
   } = {firstName: "Tu", lastName: "Le", age: "22"}
   ```
+ * null, void, and undefine 
+ 
+ ### Custom type aliases 
+ 
+ * Sử dụng từ khóa type để tạo custom type 
+ ```Javascript 
+ type PersonType = {
+  firstName: string, lastName: string, age: number
+  }
+  ```
+  * Union Types sử dụng trong trường hợp bạn muốn một biến có thể chứa 1 trong nhiều kiểu dữ liệu hoặc tham số chấp nhận 1 trong nhiều kiểu dữ liệu 
+  ```Javascript
+  let myAge: number | string
+  ```
  
