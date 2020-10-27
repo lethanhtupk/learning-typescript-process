@@ -119,3 +119,60 @@ const returnPerson: ReturnPerson = (person) => {
 };
 ```
 Tóm lại interface thường sử dụng với object và method object trong khi type tốt hơn được sử dụng với function, complex type, etc....
+
+### Methods trong interfaces 
+
+Ta có thể định nghĩa method bên trong interface 
+```Javascript 
+interface IPerson {
+  firstName: string;
+  getGreeting(lastName: string): string;
+};
+const person = {
+  firstName : "Frank",
+  getGreeting(lastName: string) {
+  return `Hello, ${this.firstName} ${lastName}`;
+  }
+};
+function greet(person: IPerson) {
+  alert(person.getGreeting("Zammetti"));
+}
+greet(person);
+```
+
+### Interfaces and Classes
+
+Class có thể implement một interface như sau 
+```Javascript
+interface IPerson {
+  firstName: string;
+  greet(): void;
+};
+class Person implements IPerson {
+  firstName: string;
+  constructor(inFirstName: string) {
+  this.firstName = inFirstName;
+  }
+  greet() {
+  alert(`Hello, ${this.firstName}`);
+  }
+}
+const p = new Person("Frank");
+p.greet();
+```
+Một class có thể implement nhiều interface trong cùng thời điểm bằng cách liệt kê các interface ngăn cách nhau bằng dấu phẩy sau từ khóa implements. 
+
+### Extending Interfaces 
+
+Một interface có thể extends một interface khác. 
+```Javascript 
+interface IPerson {
+  firstName: string;
+}
+interface INinja extends IPerson {
+  numberOfSwords: number;
+}
+let ninja = {} as INinja;
+ninja.firstName = "Ryuki";
+ninja.numberOfSwords = 2;
+```
