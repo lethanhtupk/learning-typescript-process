@@ -19,3 +19,12 @@ Ta cần phải gọi API thứ 4 một lần, sau đó lấy id tác giả gọ
 nhận được thì gọi tiếp API 4 => Quá nhiều API mà lại thừa dữ liệu cần dùng 
 
 #### GraphQL sinh ra để giải quyết vấn đề này.
+
+### Appllo Client 
+
+Apollo client là một library giúp tạo và gửi query từ client đến server để nhận về dữ liệu. (Tương tự axios)
+
+### Tạo query graphQL trong React app như thế nào? 
+
+GraphQL query không phải Javascript, nên ta phải xử dụng thêm một library là ```gql``` để giúp react có thể hiểu được query language
+và sau đó nhận được data từ query trả về. 
