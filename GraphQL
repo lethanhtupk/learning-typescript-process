@@ -1,1 +1,6 @@
 
+## GraphQL
+
+### Vấn đề với REST API 
+
+Vấn đề đối với REST API là rest api luôn trả về một cấu trúc dữ liệu cố định tương ứng với một endpoint cố định. Trong nhiều trường hợp, developer bắt buộc phải gọi cùng lúc nhiều API để có thể lấy được data họ cần. Nhưng tệ hơn có thể lấy dư luôn data mà vẫn phải gọi nhiều API 
